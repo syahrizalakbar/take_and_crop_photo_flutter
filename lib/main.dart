@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  cropPhoto(int width, int height, String filePath) async {
+  Future<void> cropPhoto(int width, int height, String filePath) async {
     int cameraWidthDisplay = (widthScreen - 32).toInt();
 
     double scale = width / cameraWidthDisplay;
